@@ -1,19 +1,24 @@
 # CSS Advanced Project
 
-This project is part of the ALX Front-End track. It focuses on using CSS to style a webpage based on a Figma design.
+This is part of the ALX Front-End curriculum. The goal of this project is to apply advanced CSS styling to a complete webpage layout.
 
-## Objectives
+## Project Features
 
-- Practice writing CSS and linking it to HTML
-- Understand specificity and the box model
-- Learn how a browser renders a web page
-- Recreate a Figma design using HTML and CSS
+- Responsive layout using CSS
+- Custom fonts and images from Figma design
+- Sections include navigation, testimonials, tutorials, and FAQ
+- Icons using Font Awesome
 
-## Files
+## Files Included
 
-- index.html – HTML structure
-- styles.css – CSS styling (to be added in future tasks)
+- `index.html`: Base HTML structure (provided by ALX)
+- `styles.css`: Will contain all styling (added in later tasks)
 
-## Author
+## Design
 
-Gbemisola Ojuolape Lasekan
+The design is based on a Figma file shared by ALX. It contains layout and UI components used to create a polished and responsive website.
+
+---
+
+**Author:** Gbemisola Ojuolape Lasekan  
+**Project:** ALX Front-End  
