@@ -1,85 +1,99 @@
-/* General Reset */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
+/* Reset and base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
-  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Header */
+/* HEADER */
 header {
   background-color: #fff;
   padding: 20px 50px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-header nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header nav img {
+nav img {
   height: 50px;
 }
 
-header nav ul {
+nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
 }
 
-header nav ul li a {
+nav ul li a {
   text-decoration: none;
   font-weight: 700;
   color: #555;
   font-size: 14px;
+  transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
   color: #ff6565;
+  cursor: pointer;
 }
 
-/* Banner / First section */
+/* FIRST SECTION - Banner */
 main section:first-of-type {
   background-image: url('./Images/Object.png');
   background-size: cover;
   background-position: center;
-  padding: 100px 50px;
   color: white;
+  padding: 120px 50px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-main section:first-of-type > div:first-child h1 {
+main section:first-of-type > div:first-child {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main section:first-of-type h1 {
   font-size: 60px;
   font-weight: 900;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
 }
 
 main section:first-of-type span {
   font-weight: 700;
-  font-size: 24px;
-  margin: 0 10px;
+  margin: 0 15px;
+  font-size: 18px;
   display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 main section:first-of-type button {
-  margin-top: 30px;
-  padding: 15px 40px;
+  margin-top: 40px;
+  padding: 18px 50px;
   background-color: #ff6565;
-  color: white;
   border: none;
   border-radius: 25px;
-  cursor: pointer;
-  font-size: 18px;
+  color: white;
   font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
@@ -87,15 +101,15 @@ main section:first-of-type button:hover {
   background-color: #ff8585;
 }
 
-/* Learn from the pros */
+/* Learn from the pros subsection */
 main section:first-of-type > div:last-child {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 main section:first-of-type > div:last-child h2 {
   font-size: 32px;
-  font-weight: 700;
   margin-bottom: 40px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -103,83 +117,53 @@ main section:first-of-type > div:last-child > div {
   display: flex;
   justify-content: center;
   gap: 40px;
-}
-
-main section:first-of-type > div:last-child div > div {
-  text-align: center;
-}
-
-main section:first-of-type > div:last-child img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-main section:first-of-type > div:last-child h3 {
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-main section:first-of-type > div:last-child p {
-  font-size: 14px;
-  color: #ccc;
-}
-
-/* Quote Section Styling (Second Section) */
-main section:nth-of-type(2) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  padding: 60px 50px;
-  background-color: #f9f9f9;
-  color: #333;
   flex-wrap: wrap;
 }
 
-main section:nth-of-type(2) > div:first-child img {
-  width: 400px;
-  max-width: 100%;
+main section:first-of-type > div:last-child > div > div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
   border-radius: 12px;
-  object-fit: cover;
+  text-align: center;
+  width: 180px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: white;
 }
 
-main section:nth-of-type(2) > div:last-child {
-  max-width: 450px;
+main section:first-of-type img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-main section:nth-of-type(2) blockquote {
-  font-style: italic;
-  font-size: 22px;
-  line-height: 1.4;
-  color: #555;
-  margin-bottom: 20px;
-  quotes: "“" "”" "‘" "’";
-}
-
-main section:nth-of-type(2) blockquote::before {
-  content: open-quote;
-  font-size: 40px;
-  line-height: 0;
-  vertical-align: -0.4em;
-  color: #ff6565;
-  margin-right: 8px;
-}
-
-main section:nth-of-type(2) blockquote::after {
-  content: close-quote;
-}
-
-main section:nth-of-type(2) h3 {
-  font-weight: 700;
-  font-size: 20px;
+main section:first-of-type h3 {
+  font-size: 18px;
   margin-bottom: 5px;
+  font-weight: 700;
 }
 
-main section:nth-of-type(2) p {
-  font-size: 16px;
-  color: #888;
-  text-transform: capitalize;
+main section:first-of-type p {
+  font-size: 14px;
+  color: #ddd;
+  font-style: italic;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 15px;
+  }
+
+  main section:first-of-type h1 {
+    font-size: 40px;
+  }
+
+  main section:first-of-type > div:last-child > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
