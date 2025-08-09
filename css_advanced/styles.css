@@ -1,0 +1,90 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic font & background */
+body {
+    font-family: Arial, sans-serif; /* Change to your Figma font */
+    background-color: #ffffff; /* Background color from Figma */
+    color: #333; /* Text color */
+}
+
+/* HEADER STYLING */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px; /* Adjust padding from Figma */
+    background-color: #fff; /* Or your Figma color */
+}
+
+header .logo img {
+    height: 40px; /* Match logo size in Figma */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between menu items */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 60px 20px; /* Adjust according to Figma */
+    background-image: url('images/hero-bg.jpg'); /* Replace with your actual background */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px; /* Match your Figma size */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px; /* Match your Figma */
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #ff5a5f; /* Button color from Figma */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    opacity: 0.9;
+}
+
+/* HERO STATS */
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.hero-stats div h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero-stats div p {
+    font-size: 14px;
+}
