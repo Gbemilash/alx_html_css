@@ -1,21 +1,26 @@
-/* General reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styles */
+/* Fonts */
+/* Add this to your HTML head for Source Sans Pro:
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+*/
+
+/* Body */
 body {
-  font-family: Arial, sans-serif;
-  background-color: white;
-  color: #333;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  background-color: #fff;
+  color: #212121;
   line-height: 1.6;
 }
 
-/* HEADER */
+/* Header */
 header {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px 50px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -41,9 +46,8 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   font-weight: 600;
-  font-family: 'Source Sans Pro', Arial, sans-serif;
-  color: #212121;
   font-size: 16px;
+  color: #212121;
   transition: color 0.3s ease;
 }
 
@@ -51,15 +55,15 @@ header nav ul li a:hover {
   color: #ff6565;
 }
 
-/* FIRST SECTION (Banner) */
+/* Banner / First Section */
 main section:first-of-type {
-  background-image: url("./images/object.png");
+  background-image: url("./Images/object.png"); /* Capital I in Images */
   background-size: cover;
   background-position: center;
   padding: 150px 50px;
   color: #fff;
   text-align: center;
-  font-family: 'Spin Cycle OT', Arial, sans-serif;
+  font-family: 'Spin Cycle OT', Arial, sans-serif; /* Or fallback */
 }
 
 main section:first-of-type h1 {
@@ -74,7 +78,6 @@ main section:first-of-type span {
   font-size: 28px;
   margin: 0 15px;
   display: inline-block;
-  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -96,16 +99,18 @@ main section:first-of-type button:hover {
   background-color: #ff7a7a;
 }
 
-/* Learn from the pros */
+/* Learn from the pros container inside banner */
 main section:first-of-type > div:last-child {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
 }
 
 main section:first-of-type > div:last-child div {
   text-align: center;
+  max-width: 180px;
 }
 
 main section:first-of-type img {
@@ -118,14 +123,29 @@ main section:first-of-type img {
 main section:first-of-type h3 {
   margin-top: 10px;
   font-size: 18px;
+  color: #fff;
 }
 
 main section:first-of-type p {
   font-size: 14px;
-  color: #ccc;
+  color: #ddd;
 }
 
-/* You can keep adding styles for other sections here later */
+/* Responsive */
+@media (max-width: 768px) {
+  main section:first-of-type {
+    padding: 100px 20px;
+  }
+
+  main section:first-of-type h1 {
+    font-size: 48px;
+  }
+
+  main section:first-of-type > div:last-child {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 
 
